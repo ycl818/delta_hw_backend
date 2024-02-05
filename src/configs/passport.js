@@ -41,15 +41,15 @@ passport.use(
           photo: profile.photos[0].value,
           account: profile.emails[0].value,
           // google 登入無password 之後改成bycrpt上隨機密碼E
-          nickName: "",
-          intro: "",
-          address: "",
-          phone: "",
-          historyPoints: null,
-          points: null,
-          pointsRecord: [],
-          cart: [],
-          permission: "",
+          // nickName: "",
+          // intro: "",
+          // address: "",
+          // phone: "",
+          // historyPoints: null,
+          // points: null,
+          // pointsRecord: [],
+          // cart: [],
+          // permission: "",
         });
         const savedUser = await newUser.save();
         console.log("成功創建新用戶。");

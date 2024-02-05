@@ -84,15 +84,6 @@ const handleSignUp = async (req, res) => {
       photo: "",
       account: email,
       password: hashedPassword,
-      nickName: "",
-      intro: "",
-      address: "",
-      phone: "",
-      historyPoints: null,
-      points: null,
-      pointsRecord: [],
-      cart: [],
-      permission: "",
     });
     await newUser.save();
     console.log("用戶註冊成功!", newUser);
